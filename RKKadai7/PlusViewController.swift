@@ -11,6 +11,7 @@ class PlusViewController: UIViewController {
     @IBOutlet private weak var firstTextField: UITextField!
     @IBOutlet private weak var secondTextField: UITextField!
     @IBOutlet private weak var resultLabel: UILabel!
+    private var resultValue: Int = 0
     
     @IBAction private func addCalcButton(_ sender: Any) {
         let firstValue = Int(firstTextField.text ?? "") ?? 0
