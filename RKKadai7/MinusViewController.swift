@@ -16,7 +16,7 @@ class MinusViewController: UIViewController {
     @IBAction private func subtractCalcButton(_ sender: Any) {
         let firstValue = Int(firstTextField.text ?? "") ?? 0
         let secondValue = Int(secondTextField.text ?? "") ?? 0
-        let resultValue = firstValue - secondValue
+        resultValue = firstValue - secondValue
         resultLabel.text = String(resultValue)
         firstTextField.endEditing(true)
         secondTextField.endEditing(true)
